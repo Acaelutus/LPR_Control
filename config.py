@@ -4,12 +4,11 @@ DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 
 # Path to video file or RTSP stream
-# RTSP_STREAM_1 = os.environ.get('rtsp_stream', 'rtsp://admin:zxcvbn12@192.168.1.108:554/RVi/1/1')
-# RTSP_STREAM_2 = os.environ.get('rtsp_stream', 'rtsp://admin:123456AS@192.168.1.107:554/cam/realmonitor?channel=1&subtype=0')
-VIDEO_FILE_1 = os.environ.get('file_path', os.path.normpath("test/videos/test2.mp4"))
-VIDEO_FILE_2 = os.environ.get('file_path', os.path.normpath("test/videos/rfpass.mp4"))
-FILE_PATH = os.environ.get('file_path', os.path.normpath("test/videos/test2.mp4"))
-UART_PORT = "COM4"  # Заменить на реальный порт
+# RTSP_STREAM_1 = os.environ.get()
+# RTSP_STREAM_2 = os.environ.get()
+VIDEO_FILE_1 = os.environ.get())
+VIDEO_FILE_2 = os.environ.get())
+FILE_PATH = os.environ.get())
 
 
 # YOLO model configurations
