@@ -1,0 +1,11 @@
+Demo result
+============================================================
+Video:              data/videos/demo.mp4
+Frames written:     360
+Frames analyzed:    12
+Process every:      30 frame(s)
+Output duration:    6.0s
+Plate detections:   26
+Access granted:     A280PM76, B098EO76, H386CE76, K768XO76, O718CY777, X313HO76
+DB log rows added:  13
+Status:             PASS

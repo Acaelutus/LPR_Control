@@ -1,0 +1,47 @@
+# Alternative config for Ultralytics YOLO weights.
+
+device:
+  use_cuda: true
+
+plate_detector:
+  model_type: "yolov8"
+  model_format: "ultralytics"
+  weights_path: "data/weights/yolo8s.pt"
+  confidence_threshold: 0.45
+  iou_threshold: 0.45
+  device: "auto"
+
+ocr:
+  engine: "lprnet"
+  model_path: "data/weights/LPRNet.pth"
+  max_plate_length: 9
+  device: "auto"
+  use_augmentation: false
+
+database:
+  type: "sqlite"
+  path: "data/access_list.db"
+  json_path: "data/whitelist.json"
+
+controller:
+  type: "simulated"
+  serial_port: "COM3"
+  baud_rate: 115200
+  simulation_mode: true
+
+pipeline:
+  frame_skip: 1
+  max_frame_rate: 30
+  plate_matching_iou_threshold: 0.1
+  duplicate_detection_timeout: 2.0
+
+input:
+  video_file: null
+  rtsp_stream: null
+  camera_index: 0
+
+output:
+  display_detections: true
+  save_detections: false
+  detection_output_dir: "data/detections/"
+  fps: 30

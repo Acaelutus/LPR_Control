@@ -1,0 +1,10 @@
+opencv-python==4.10.0.84
+ultralytics>=8.3.0
+torch>=2.4.0
+torchvision>=0.19.0
+numpy>=1.24.0
+PyYAML>=6.0.1
+python-dotenv>=1.0.0
+
+# Optional for real ESP32 serial control:
+# pyserial>=3.5
